@@ -1,0 +1,112 @@
+{
+  "compute": {
+    "azEnvironment": "AzurePublicCloud",
+    "customData": "",
+    "evictionPolicy": "",
+    "isHostCompatibilityLayerVm": "false",
+    "licenseType": "",
+    "location": "eastus2",
+    "name": "consul-01",
+    "offer": "CentOS",
+    "osProfile": {
+      "adminUsername": "consul1",
+      "computerName": "consul-01",
+      "disablePasswordAuthentication": "true"
+    },
+    "osType": "Linux",
+    "placementGroupId": "",
+    "plan": {
+      "name": "",
+      "product": "",
+      "publisher": ""
+    },
+    "platformFaultDomain": "0",
+    "platformUpdateDomain": "0",
+    "priority": "",
+    "provider": "Microsoft.Compute",
+    "publicKeys": [
+      {
+        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDX/6f/nQu99LmuO4zuzpjFZEYIxTTVViz01nAfiiRTSmFM+wHUiEWdkg0Y8h9YJa2cfYlxeoS7QZtxWtI2i3asb1rGB/ZsLJHm7Xk9ji5Yu7Ldl8usP3VSSmuT719Cu5GN2uCQ864YGIrewaY+SmeIjpiqrw0PQNdhBXQwOroZHRrFcJdtnwMUDnlO/rk7vjAuhE6OJUM7/VtWqA1qCAdU7sczHk8UFzQ85EVLz36CvQhwbhbv6+iJnyQTFlx3jOltb2fwm2dZy1u8MMbnFdkyUWr6fuPjX3a5JPuzlsjrv9YeolDqV7wGlF5QGw0idvRiqEVXqnJ/U9/JhfJPV+ypRa0M7kxR7HumqEZV8xKKv9TOQWxWTvJR1fbGPQbMTI/qLNiSbG1RRcnKpgH+7Rdpt7Z4DN9f/SV/CtTPVhWHHwKRcLUIQe/wSS2Vy5t3IbNwc4WDR3DZ1ucJ6UeA1Cw8ftbHg0DLsRzL9e5KNJyCNbsfNZPPZqInb/qmp8HFpUU= generated-by-azure",
+        "path": "/home/consul1/.ssh/authorized_keys"
+      }
+    ],
+    "publisher": "OpenLogic",
+    "resourceGroupName": "rg",
+    "resourceId": "/subscriptions/42a3cd8f-f4a9-45f1-8935-b671828752b3/resourceGroups/rg/providers/Microsoft.Compute/virtualMachines/consul-01",
+    "securityProfile": {
+      "secureBootEnabled": "false",
+      "virtualTpmEnabled": "false"
+    },
+    "sku": "7_9-gen2",
+    "storageProfile": {
+      "dataDisks": [],
+      "imageReference": {
+        "id": "",
+        "offer": "CentOS",
+        "publisher": "OpenLogic",
+        "sku": "7_9-gen2",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diffDiskSettings": {
+          "option": ""
+        },
+        "diskSizeGB": "30",
+        "encryptionSettings": {
+          "enabled": "false"
+        },
+        "image": {
+          "uri": ""
+        },
+        "managedDisk": {
+          "id": "/subscriptions/42a3cd8f-f4a9-45f1-8935-b671828752b3/resourceGroups/rg/providers/Microsoft.Compute/disks/consul-01_OsDisk_1_9d6c122a5cde4f9da99e902ecf698981",
+          "storageAccountType": "Premium_LRS"
+        },
+        "name": "consul-01_OsDisk_1_9d6c122a5cde4f9da99e902ecf698981",
+        "osType": "Linux",
+        "vhd": {
+          "uri": ""
+        },
+        "writeAcceleratorEnabled": "false"
+      },
+      "resourceDisk": {
+        "size": "34816"
+      }
+    },
+    "subscriptionId": "42a3cd8f-f4a9-45f1-8935-b671828752b3",
+    "tags": "",
+    "tagsList": [],
+    "userData": "",
+    "version": "7.9.2022020701",
+    "vmId": "7f549a4f-3e96-41c6-acfe-e4a3f71fb1f5",
+    "vmScaleSetName": "",
+    "vmSize": "Standard_B1s",
+    "zone": ""
+  },
+  "network": {
+    "interface": [
+      {
+        "ipv4": {
+          "ipAddress": [
+            {
+              "privateIpAddress": "10.0.0.5",
+              "publicIpAddress": "20.230.65.137"
+            }
+          ],
+          "subnet": [
+            {
+              "address": "10.0.0.0",
+              "prefix": "24"
+            }
+          ]
+        },
+        "ipv6": {
+          "ipAddress": []
+        },
+        "macAddress": "000D3A7CDFC3"
+      }
+    ]
+  }
+}
